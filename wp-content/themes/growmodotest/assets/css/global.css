@@ -156,6 +156,7 @@ input {
     border-radius: 0.5rem;
     border: 1px solid var(--gm-color-black-15);
     background-color: var(--gm-color-black-08);
+    color: var(--gm-color-white);
 }
 
 input::placeholder {
@@ -285,7 +286,19 @@ button {
 }
 
 @media (min-width: 768px) {}
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .btn {
+        transition: background-color 0.3s;
+    }
+
+    .btn--primary:hover {
+        background-color: var(--gm-color-purple-70);
+    }
+
+    .btn--secondary:hover {
+        background-color: var(--gm-color-black-20);
+    }
+}
 @media (min-width: 1600px) {
     .btn {
         padding: 1.125rem 1.25rem;

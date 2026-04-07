@@ -222,6 +222,14 @@
         font-size: 1.125rem;
     }
 
+    .site-footer .menu a {
+        transition: opacity 0.3s;
+    }
+
+    .site-footer .menu a:hover {
+        opacity: 0.8;
+    }
+
     /**
      * Site Footer Bottom
      */
@@ -245,6 +253,8 @@
      * Social Links
      */
     .social-links__link {
+        width: 2.5rem;
+        width: 2.5rem;
         transition-property: background-color, color;
         transition-duration: 0.3s;
     }
@@ -276,5 +286,17 @@
     .site-footer__menu-col-heading {
         margin-bottom: 1.875rem;
         font-size: 1.25rem;
+    }
+
+    /**
+     * Social Links
+     */
+    .social-links {
+        gap: 0.625rem;
+    }
+
+    .social-links__link {
+        width: 3.75rem;
+        height: 3.75rem;
     }
 }
