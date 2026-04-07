@@ -1,0 +1,72 @@
+/**
+ * Section
+ */
+.cta-section {
+    padding: 3.125rem 0;
+    position: relative;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: var(--gm-color-black-15);
+    overflow: hidden;
+}
+
+.cta-section__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+.cta-section .btn {
+    width: 100%;
+}
+
+/**
+ * Abstract Designs
+ */
+.cta-section__abstract-design-top,
+.cta-section__abstract-design-bottom {
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    object-fit: contain;
+}
+
+.cta-section__abstract-design-top {
+    top: 0;
+    left: 0;
+    transform: translate(-1.25rem, -6.25rem);
+}
+
+.cta-section__abstract-design-bottom {
+    bottom: 0;
+    right: 0;
+    transform: translate(-3.125rem, -3.125rem);
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1200px) {
+    /**
+    * Section
+    */
+    .cta-section {
+        padding: 3.75rem 0;
+    }
+
+    .cta-section__inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10.41666667vw;
+    }
+
+    .cta-section__text-col {
+        flex: 1;
+    }
+}
+
+@media (min-width: 1600px) {
+    
+}

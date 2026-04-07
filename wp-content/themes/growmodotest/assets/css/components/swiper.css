@@ -1,0 +1,75 @@
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    height: auto;
+}
+
+.swiper-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.875rem;
+    padding-top: 1rem;
+    position: relative;
+    border-top: 1px solid var(--gm-color-black-15);
+}
+
+.swiper-pagination {
+    width: auto;
+    position: static;
+}
+
+.swiper-pagination-current {
+    color: var(--gm-color-white);
+}
+
+.swiper-buttons {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+    gap: 0.625rem;
+    position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+    padding: 0.625rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    position: static;
+    background: var(--gm-color-black-10);
+    border: 1px solid var(--gm-color-black-15);
+    border-radius: 50%;
+    font-family: 'icomoon';
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--gm-color-white);
+}
+
+.swiper-horizontal :is(.swiper-button-prev, .swiper-button-next) {
+    margin-top: 0;
+}
+
+.swiper-button-prev:before {
+    content: '\e90a';
+    transform: rotateZ(180deg);
+}
+
+.swiper-button-next:before {
+    content: '\e90a';
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1200px) {
+    .swiper-controls {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (min-width: 1600px) {}

@@ -1,0 +1,181 @@
+/**
+ * Top Banner
+ */
+.site-top-banner {
+    padding: 2.25rem 0 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--gm-color-black-10);
+    overflow: hidden;
+}
+
+.site-top-banner__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-top-banner__text {
+    margin-bottom: 0;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    color: var(--gm-color-white);
+}
+
+.site-top-banner__text a {
+    margin-left: 0.375rem;
+    text-decoration: underline;
+}
+
+.site-top-banner__close {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 1.625rem;
+    height: 1.625rem;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: 'icomoon';
+    color: var(--gm-color-white);
+}
+
+.site-top-banner__close:before {
+    content: '\e903';
+    font-size: 0.5625rem;
+    line-height: 1;
+}
+
+.site-top-banner__abstract-design {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+/**
+ * Main
+ */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 1.25rem 0;
+    background-color: var(--gm-color-black-10);
+}
+
+.site-top-banner + .site-header {
+    top: 4.875rem;
+}
+
+.site-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header__cta {
+    display: none;
+    background-color: var(--gm-color-black-08);
+}
+
+/**
+ * Logo
+ */
+.site-header__logo {
+    max-width: 5.875rem;
+}
+
+/**
+ * Main Menu
+ */
+.site-header-menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/**
+ * Mobile Menu
+ */
+.mobile-menu-toggle {
+    padding: 0;
+    font-family: 'icomoon';
+    border: none;
+    background: none;
+    color: var(--gm-color-white);
+    font-size: 1.75rem;
+}
+
+.mobile-menu-toggle:before {
+    content: '\e909';
+} 
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1200px) {
+    /**
+    * Top Banner
+    */
+    .site-top-banner__text {
+        flex: 1;
+        text-align: center;
+        font-size: 0.875rem;
+    }
+
+    /**
+     * Main
+     */
+    .site-header__cta {
+        display: inline-block;
+    } 
+
+    /**
+    * Logo
+    */
+    .site-header__logo {
+        max-width: 7.125rem;
+    }
+
+    /**
+     * Main Menu
+     */
+    .site-header-menu {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .site-header-menu a {
+        padding: 0.75rem 1.25rem;
+        border-radius: 0.5rem;
+        border: 1px solid transparent;
+        font-size: 0.875rem;
+        transition-property: border-color, background-color;
+        transition-duration: 0.3s;
+    }
+
+    .site-header-menu .current-menu-item a,
+    .site-header-menu a:hover {
+        border-color: var(--gm-color-black-15);
+        background-color: var(--gm-color-black-08);
+    }
+
+    /**
+     * Mobile Menu
+     */
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+@media (min-width: 1600px) {
+    
+}

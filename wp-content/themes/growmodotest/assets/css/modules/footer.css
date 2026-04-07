@@ -1,0 +1,121 @@
+.site-footer {
+    
+}
+
+.site-footer__top {
+    padding: 3.125rem 0;
+}
+
+.site-footer__top-grid {
+    --bs-gutter-y: 3.125rem;
+}
+
+.site-footer-bottom {
+    padding: 1.25rem 0;
+    background-color: var(--gm-color-black-10);
+}
+
+.site-footer-bottom__inner {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+}
+
+.site-footer-bottom__left {
+    text-align: center;
+    color: var(--gm-color-white);
+}
+
+/* Columns */
+.site-footer__menu-col-heading {
+    color: var(--gm-color-black-60);
+}
+
+/* Menus */
+.site-footer .menu {
+    padding-left: 0;
+    list-style: none;
+}
+
+.site-footer .menu li {
+    margin-bottom: 0.5rem;
+}
+
+.site-footer .menu li:last-child {
+    margin-bottom: 0;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.social-links__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 50%;
+    background-color: var(--gm-color-black-08);
+}
+
+.social-links__icon {
+    font-size: 1.25rem;
+}
+
+/**
+ * Newsletter Form
+ */
+.newsletter-form {
+    position: relative;
+}
+.newsletter-form__text {}
+.newsletter-form__submit {} 
+
+@media (min-width: 768px) {}
+@media (min-width: 1200px) {
+    /**
+     * Site Footer Menu
+     */
+    .row > .site-footer__menu-col {
+        width: 20%;
+    }
+
+    /**
+     * Site Footer Bottom
+     */
+    .site-footer-bottom__inner {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .site-footer-bottom__left {
+        display: flex;
+        gap: 1.25rem;
+        flex: 1;
+        text-align: left;
+    }
+
+    .site-footer-bottom__left p {
+        margin-bottom: 0;
+    }
+
+    /**
+     * Social Links
+     */
+    .social-links__link {
+        transition-property: background-color, color;
+        transition-duration: 0.3s;
+    }
+
+    .social-links__link:hover {
+        background-color: var(--gm-color-white);
+        color: var(--gm-color-black);
+    }
+
+}
+@media (min-width: 1600px) {}

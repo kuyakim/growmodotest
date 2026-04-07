@@ -1,0 +1,30 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.875rem;
+    height: 100%;
+    gap: 1.25rem;
+    border-radius: 0.625rem;
+    border: 1px solid var(--gm-color-black-15);
+    background-color: var(--gm-color-black-08);
+}
+
+.faq__btn {
+    width: 100%;
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1200px) {
+    .faq {
+        gap: 1.25rem;
+        padding: 2.5rem;
+    }
+
+    .faq__btn {
+        width: auto;
+    }
+}
+
+@media (min-width: 1600px) {}
