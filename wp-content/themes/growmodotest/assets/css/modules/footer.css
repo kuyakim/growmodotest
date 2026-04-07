@@ -10,6 +10,10 @@
     --bs-gutter-y: 3.125rem;
 }
 
+.site-footer__logo {
+    width: 7.125rem;
+}
+
 .site-footer-bottom {
     padding: 1.25rem 0;
     background-color: var(--gm-color-black-10);
@@ -27,14 +31,41 @@
     color: var(--gm-color-white);
 }
 
-/* Columns */
+/**
+ * Columns
+ */
+.site-footer__menu-col {
+    position: relative;
+}
+
+.site-footer__menu-col:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    width: calc(100% - 2rem);
+    height: 1px;
+    background-color: var(--gm-color-black-15);    
+}
+
+.site-footer__menu-col:nth-child(odd):after {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    height: calc(100% - 1rem);
+    width: 1px;
+    background-color: var(--gm-color-black-15);    
+}
+
 .site-footer__menu-col-heading {
     color: var(--gm-color-black-60);
 }
 
 /* Menus */
 .site-footer .menu {
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -72,9 +103,39 @@
  */
 .newsletter-form {
     position: relative;
+    width: 100%;
+    margin-top: 1.25rem;
 }
-.newsletter-form__text {}
-.newsletter-form__submit {} 
+
+.newsletter-form:before {
+    content: '\e904';
+    position: absolute;
+    top: 50%;
+    left: 1.25rem;
+    transform: translate(0, -50%);
+    font-family: 'icomoon';
+    font-size: 1.25rem;
+}
+
+.newsletter-form__input {
+    padding-left: 3rem;
+}
+.newsletter-form__submit {
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 1.25rem;
+    transform: translate(0, -50%);
+    font-family: 'icomoon';
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    color: var(--gm-color-white);
+}
+
+.newsletter-form__submit:before {
+    content: '\e908';
+}
 
 @media (min-width: 768px) {}
 @media (min-width: 1200px) {
@@ -83,6 +144,11 @@
      */
     .row > .site-footer__menu-col {
         width: 20%;
+    }
+
+    .site-footer__menu-col:before,
+    .site-footer__menu-col:nth-child(odd):after {
+        content: none;
     }
 
     /**
@@ -117,5 +183,11 @@
         color: var(--gm-color-black);
     }
 
+    /**
+     * Newsletter Form
+     */
+    .newsletter-form {
+        max-width: 20rem;
+    }
 }
 @media (min-width: 1600px) {}

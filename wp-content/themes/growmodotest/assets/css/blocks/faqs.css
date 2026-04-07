@@ -31,4 +31,9 @@
     }
 }
 
-@media (min-width: 1600px) {}
+@media (min-width: 1600px) {
+    .faq {
+        gap: 1.875rem;
+        padding: 3.125rem;
+    }
+}

@@ -177,5 +177,46 @@
 }
 
 @media (min-width: 1600px) {
-    
+    /**
+     * Top Banner
+     */
+    .site-top-banner {
+        padding: 1.125rem 0;
+    }
+
+    .site-top-banner__text {
+        font-size: 1.125rem;
+    }
+
+    .site-top-banner__close {
+        width: 2rem;
+        height: 2rem;
+        
+    }
+
+    .site-top-banner__close:before {
+        font-size: 0.75rem;
+    }
+
+    /**
+     * Main
+     */
+    .site-top-banner + .site-header {
+        top: 3.875rem;
+    }
+     
+    /**
+    * Logo
+    */
+    .site-header__logo {
+        max-width: 10rem;
+    }
+
+    /**
+     * Main Menu
+     */
+    .site-header-menu a {
+        padding: 0.875rem 1.5rem;
+        font-size: 1.125rem;
+    }
 }

@@ -183,9 +183,21 @@
     }
 
     /**
+     * USPs
+     */
+    .hero-usp {
+        align-items: flex-start;
+    }
+
+    .hero-usp__title {
+        font-size: 1.875rem;
+    }
+
+    /**
      * Icon Cards
      */
     .hero-icon-card {
+        padding: 1.875rem 1rem;
         gap: 1rem;
         transition: box-shadow 0.3s;
     }
@@ -198,8 +210,34 @@
         width: 3.75rem;
         height: 3.75rem;
     }
+
+    .hero-icon-card__arrow-icon {
+        font-size: 1.625rem;
+    }
 }
 
 @media (min-width: 1600px) {
+    /**
+     * USPs
+     */
+    .hero-usp__title {
+        font-size: 2.5rem;
+    }
+
+    /**
+     * Icon Cards
+     */
+    .hero-icon-card {
+        gap: 1.25rem;
+        padding: 2.5rem 1.25rem;
+    }
     
+    .hero-icon-card__icon {
+        width: 5.125rem;
+        height: 5.125rem;
+    }
+
+    .hero-icon-card__arrow-icon {
+        font-size: 2.125rem;
+    }
 }

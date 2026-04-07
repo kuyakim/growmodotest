@@ -78,7 +78,22 @@
 
 @media (min-width: 768px) {
 }
+
 @media (min-width: 1200px) {
+    .property {
+        padding: 1.875rem;
+        gap: 1.25rem;
+    }
+
+    .property__desc {
+        margin-bottom: 1.5rem;
+    }
+
+    .property__price-value {
+        font-size: 1.25rem;
+    }
 }
+
 @media (min-width: 1600px) {
+    
 }

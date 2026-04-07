@@ -36,6 +36,7 @@
 .swiper-button-prev,
 .swiper-button-next {
     display: flex;
+    justify-content: center;
     align-items: flex-start;
     gap: 0.625rem;
     padding: 0.625rem;
@@ -70,6 +71,21 @@
     .swiper-controls {
         margin-top: 2.5rem;
     }
+    .swiper-pagination {
+        font-size: 1rem;
+    }
 }
 
-@media (min-width: 1600px) {}
+@media (min-width: 1600px) {
+    .swiper-pagination {
+        font-size: 1.25rem;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        padding: 0.875rem;
+        width: 3.625rem;
+        height: 3.625rem;
+        font-size: 1.875rem;
+    }
+}

@@ -29,13 +29,13 @@ $menu_cols = [
             <div class="container">
                 <div class="site-footer__top-grid row">
                     <div class="col-lg-4">
-                        <a href="<?php echo esc_url(home_url('/')); ?>">
-                            <?php echo gm_get_image_tag(67); ?>
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="site-footer__logo-link">
+                            <?php echo gm_get_image_tag(67, 'site-footer__logo'); ?>
                         </a>
-                        <!-- <form action="" method="POST" class="newsletter-form">
+                        <form action="" method="POST" class="newsletter-form">
                             <input type="email" class="newsletter-form__input" placeholder="Enter Your Email">
                             <button type="submit" class="newsletter-form__submit"></button>
-                        </form> -->
+                        </form>
                     </div>
                     <div class="col-lg-8">
                         <div class="site-footer__menu-row row">

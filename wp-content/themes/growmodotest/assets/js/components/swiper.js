@@ -39,6 +39,7 @@
                     breakpoints: {
                         1200: {
                             slidesPerView: 3,
+                            spaceBetween: 30,
                             pagination: {
                                 el: $paginationDesktop.get(0),
                             },
