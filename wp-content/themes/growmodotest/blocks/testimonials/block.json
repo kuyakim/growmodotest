@@ -1,15 +1,15 @@
 {
-    "name": "acf/properties",
-    "title": "Properties",
-    "description": "Displays properties post type.",
+    "name": "acf/testimonials",
+    "title": "Testimonials",
+    "description": "Displays testimonials post type.",
     "style": [
         "file:./testimonial.css"
     ],
     "category": "gm-blocks",
-    "icon": "building",
+    "icon": "testimonial",
     "keywords": [
-        "properties",
-        "property"
+        "testimonials",
+        "testimonial"
     ],
     "acf": {
         "mode": "edit",

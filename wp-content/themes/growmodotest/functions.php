@@ -1,8 +1,10 @@
 <?php
 defined('ABSPATH') || exit;
 
-define('GMODO_THEME_URI', get_theme_file_uri());
-define('GMODO_THEME_DIR', get_theme_file_path());
+define('GMODO_THEME_URI', get_template_directory_uri());
+define('GMODO_THEME_DIR', get_template_directory());
+
+define('GMODO_IMG_URI', GMODO_THEME_URI . '/assets/css');
 
 define('GMODO_CSS_URI', GMODO_THEME_URI . '/assets/css');
 define('GMODO_CSS_DIR', GMODO_THEME_DIR . '/assets/css');

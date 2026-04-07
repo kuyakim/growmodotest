@@ -10,8 +10,9 @@ defined('ABSPATH') || exit;
 
 $cta_link_tag = gm_get_link_tag($cta_link, 'btn btn--secondary');
 ?>
-<section id="properties" class="properties-section section">
+<section id="<?php echo isset($block['anchor']) ? esc_attr($block['anchor']) : 'properties'; ?>" class="properties-section section">
     <div class="container">
+        <?php if (wp_strip_all_tags($heading) || wp_strip_all_tags($text) || $cta_link_tag) { ?>
         <div class="section__intro">
             <div class="section__intro-text-col">
                 <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/icon-star-light.svg')); ?>"
@@ -27,6 +28,7 @@ $cta_link_tag = gm_get_link_tag($cta_link, 'btn btn--secondary');
                 <?php echo $cta_link_tag; ?>
             </div>
         </div>
+        <?php } ?>
 
         <?php if ($property_ids) { ?>
         <div class="properties-swiper swiper js-swiper">
@@ -71,9 +73,11 @@ $cta_link_tag = gm_get_link_tag($cta_link, 'btn btn--secondary');
             </div>
 
             <div class="swiper-controls">
+                <?php if ($cta_link_tag) { ?>
                 <div class="hidden-lg">
                     <?php echo $cta_link_tag; ?>
                 </div>
+                <?php } ?>
                 <div class="swiper-pagination swiper-pagination--desktop hidden-md-down js-swiper-pagination">
                 </div>
                 <div class="swiper-buttons">
