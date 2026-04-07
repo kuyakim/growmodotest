@@ -169,6 +169,14 @@
     .hidden-lg { display: none !important; }
 }
 
+	@media (max-width: 1599px) {
+		.hidden-lg-down { display: none !important; }
+	}
+
+@media (min-width: 1600px) {
+    .hidden-xl { display: none !important; }
+}
+
 /**
  * Screen Readers
  */

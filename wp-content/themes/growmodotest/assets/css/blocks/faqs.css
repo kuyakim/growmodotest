@@ -22,6 +22,10 @@
         padding: 2.5rem;
     }
 
+    .faq__title {
+        min-height: 3.5rem;
+    }
+
     .faq__btn {
         width: auto;
     }

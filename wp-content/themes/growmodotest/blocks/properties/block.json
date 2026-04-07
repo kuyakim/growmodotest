@@ -2,9 +2,7 @@
     "name": "acf/properties",
     "title": "Properties",
     "description": "Displays properties post type.",
-    "style": [
-        "file:./testimonial.css"
-    ],
+    "style": [],
     "category": "gm-blocks",
     "icon": "building",
     "keywords": [

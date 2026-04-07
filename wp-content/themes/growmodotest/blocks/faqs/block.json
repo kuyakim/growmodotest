@@ -1,13 +1,13 @@
 {
-    "name": "acf/testimonials",
-    "title": "Testimonials",
-    "description": "Displays testimonials post type.",
+    "name": "acf/faqs",
+    "title": "FAQs",
+    "description": "Displays FAQs post type.",
     "style": [],
     "category": "gm-blocks",
-    "icon": "testimonial",
+    "icon": "admin-comments",
     "keywords": [
-        "testimonials",
-        "testimonial"
+        "FAQs",
+        "FAQ"
     ],
     "acf": {
         "mode": "edit",

@@ -1,13 +1,13 @@
 {
-    "name": "acf/testimonials",
-    "title": "Testimonials",
-    "description": "Displays testimonials post type.",
+    "name": "acf/cta",
+    "title": "CTA",
+    "description": "Displays CTA block.",
     "style": [],
     "category": "gm-blocks",
-    "icon": "testimonial",
+    "icon": "megaphone",
     "keywords": [
-        "testimonials",
-        "testimonial"
+        "CTA",
+        "Call to action"
     ],
     "acf": {
         "mode": "edit",

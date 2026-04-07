@@ -23,24 +23,15 @@
 /**
  * Abstract Designs
  */
-.cta-section__abstract-design-top,
-.cta-section__abstract-design-bottom {
+.cta-section__bg {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    z-index: -1;
-    pointer-events: none;
-    object-fit: contain;
-}
-
-.cta-section__abstract-design-top {
     top: 0;
     left: 0;
-    transform: translate(-1.25rem, -6.25rem);
-}
-
-.cta-section__abstract-design-bottom {
-    bottom: 0;
-    right: 0;
-    transform: translate(-3.125rem, -3.125rem);
+    z-index: -1;
+    object-fit: cover;
+    pointer-events: none;
 }
 
 @media (min-width: 768px) {

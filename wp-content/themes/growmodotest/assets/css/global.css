@@ -205,6 +205,10 @@ img {
 /**
  * Buttons
  */
+button {
+    cursor: pointer;
+}
+
 .btn {
     display: inline-block;
     padding: 0.875rem 1.25rem;

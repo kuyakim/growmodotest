@@ -12,26 +12,10 @@ $cta_link_tag = gm_get_link_tag($cta_link, 'btn btn--secondary');
 ?>
 <section id="<?php echo isset($block['anchor']) ? esc_attr($block['anchor']) : 'testimonials'; ?>" class="testimonials-section section">
     <div class="container">
-        <?php if (wp_strip_all_tags($heading) || wp_strip_all_tags($text) || $cta_link_tag) { ?>
-        <div class="section__intro">
-            <div class="section__intro-text-col">
-                <img src="<?php echo esc_url(get_theme_file_uri('/assets/img/icon-star-light.svg')); ?>"
-                    width="45" height="20" alt="Star light decoration" aria-hidden="true">
-                <?php if (wp_strip_all_tags($heading)) { ?>
-                <h2><?php echo acf_esc_html($heading); ?></h2>
-                <?php } ?>
-                <?php if (wp_strip_all_tags($text)) { ?>
-                <p><?php echo acf_esc_html($text); ?></p>
-                <?php } ?>
-            </div>
-            <div class="section__intro-btn-col hidden-md-down">
-                <?php echo $cta_link_tag; ?>
-            </div>
-        </div>
-        <?php } ?>
+        <?php get_template_part('partials/section', 'intro', compact('heading', 'text', 'cta_link_tag')); ?>
 
         <?php if ($testimonial_ids) { ?>
-        <div class="testimonials-swiper swiper js-swiper">
+        <div class="swiper js-swiper">
             <div class="swiper-wrapper js-swiper-wrapper">
                 <?php foreach ($testimonial_ids as $testimonial_id) { ?>
                 <?php
@@ -83,22 +67,7 @@ $cta_link_tag = gm_get_link_tag($cta_link, 'btn btn--secondary');
                 <?php }?>
             </div>
 
-            <div class="swiper-controls">
-                <?php if ($cta_link_tag) { ?>
-                <div class="hidden-lg">
-                    <?php echo $cta_link_tag; ?>
-                </div>
-                <?php } ?>
-                <div
-                    class="swiper-pagination swiper-pagination--desktop hidden-md-down js-swiper-pagination">
-                </div>
-                <div class="swiper-buttons">
-                    <div class="swiper-button-prev js-swiper-button-prev"></div>
-                    <div class="swiper-pagination swiper-pagination--mobile hidden-lg js-swiper-pagination">
-                    </div>
-                    <div class="swiper-button-next js-swiper-button-next"></div>
-                </div>
-            </div>
+            <?php get_template_part('partials/swiper', 'controls', compact('cta_link_tag')); ?>
         </div>
         <?php } ?>
     </div>

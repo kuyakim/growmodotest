@@ -1,13 +1,14 @@
 {
-    "name": "acf/testimonials",
-    "title": "Testimonials",
-    "description": "Displays testimonials post type.",
+    "name": "acf/hero",
+    "title": "Hero",
+    "description": "Displays Hero block.",
     "style": [],
     "category": "gm-blocks",
-    "icon": "testimonial",
+    "icon": "cover-image",
     "keywords": [
-        "testimonials",
-        "testimonial"
+        "Hero banner",
+        "Banner",
+        "Hero"
     ],
     "acf": {
         "mode": "edit",
