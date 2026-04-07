@@ -2,7 +2,12 @@
     "name": "acf/properties",
     "title": "Properties",
     "description": "Displays properties post type.",
-    "style": [],
+    "style": [
+        "gm-block-properties"
+    ],
+    "script": [
+        "gm-comp-swiper"
+    ],
     "category": "gm-blocks",
     "icon": "building",
     "keywords": [

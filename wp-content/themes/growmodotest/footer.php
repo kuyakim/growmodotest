@@ -84,6 +84,19 @@ $menu_cols = [
             </div>
         </div>
     </footer>
+    
+    <div class="mobile-menu-modal js-mobile-menu-modal">
+        <button type="button" class="mobile-menu-modal__closer js-mobile-menu-modal-closer" aria-label="Mobile menu modal closer"></button>
+        <div class="mobile-menu-modal__body">
+            <?php
+            wp_nav_menu([
+                'menu' => 'Header Main',
+                'container' => '',
+                'menu_class' => 'mobile-menu menu',
+            ]);
+            ?>
+        </div>
+    </div>
     <?php wp_footer(); ?>
 </body>
 </html>

@@ -2,7 +2,12 @@
     "name": "acf/faqs",
     "title": "FAQs",
     "description": "Displays FAQs post type.",
-    "style": [],
+    "style": [
+        "gm-block-faqs"
+    ],
+    "script": [
+        "gm-comp-swiper"
+    ],
     "category": "gm-blocks",
     "icon": "admin-comments",
     "keywords": [

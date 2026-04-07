@@ -7,23 +7,29 @@ defined('ABSPATH') || exit;
 function gm_enqueue_style(
     string $handle = '',
     string $uri_path = '',
-    array $deps = []
+    array $deps = [],
+    bool $enqueue = false
 ) {
-    wp_enqueue_style(
+    wp_register_style(
         $handle,
         GMODO_CSS_URI . '/' . $uri_path,
         $deps,
         filemtime(GMODO_CSS_DIR . '/' . $uri_path)
     );
+
+    if ($enqueue) {
+        wp_enqueue_style($handle);
+    }
 }
 
 function gm_enqueue_script(
     string $handle = '',
     string $uri_path = '',
     array $deps = [],
-    array $args = []
+    array $args = [],
+    bool $enqueue = false
 ) {
-    wp_enqueue_script(
+    wp_register_script(
         $handle,
         GMODO_JS_URI . '/' . $uri_path,
         $deps,
@@ -32,6 +38,10 @@ function gm_enqueue_script(
             'in_footer' => true,
         ], $args)
     );
+
+    if ($enqueue) {
+        wp_enqueue_script($handle);
+    }
 }
 
 /**

@@ -41,14 +41,21 @@ defined('ABSPATH') || exit;
                 <?php if ($usps) { ?>
                 <div class="hero-usps">
                     <div class="hero-usps-grid row">
-                        <?php foreach ($usps as $usp) { ?>
+                        <?php
+                        $usps_count = count($usps);
+                        $has_orphan = $usps_count % 2 !== 0;
+                        ?>
+                        <?php foreach ($usps as $i => $usp) { ?>
                         <?php
                         [
                             'title' => $usp_title,
                             'text' => $usp_text,
                         ] = $usp;
+
+                        $is_last_child = ($usps_count - 1) === $i;
+                        $is_wide = $has_orphan && $is_last_child;
                         ?>
-                        <div class="col-xxs-6 col-lg-4">
+                        <div class="<?php echo $is_wide ? 'col-xxs-12' : 'col-xxs-6'; ?> col-lg-4">
                             <div class="hero-usp">
                                 <?php if (wp_strip_all_tags($usp_title)) { ?>
                                 <p class="hero-usp__title"><?php echo acf_esc_html($usp_title); ?></p>

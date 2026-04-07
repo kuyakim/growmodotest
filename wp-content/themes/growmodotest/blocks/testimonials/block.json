@@ -2,7 +2,12 @@
     "name": "acf/testimonials",
     "title": "Testimonials",
     "description": "Displays testimonials post type.",
-    "style": [],
+    "style": [
+        "gm-block-testimonials"
+    ],
+    "script": [
+        "gm-comp-swiper"
+    ],
     "category": "gm-blocks",
     "icon": "testimonial",
     "keywords": [

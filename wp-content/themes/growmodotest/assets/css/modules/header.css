@@ -2,12 +2,26 @@
  * Top Banner
  */
 .site-top-banner {
+    display: none;
     padding: 2.25rem 0 1rem;
-    position: sticky;
-    top: 0;
+    position: relative;
     z-index: 10;
     background-color: var(--gm-color-black-10);
     overflow: hidden;
+}
+
+.site-top-banner.is-init {
+    display: block;
+    transform: translateY(calc(var(--height) * -1));
+    margin-bottom: calc(var(--height) * -1);
+    transition-property: margin-bottom, transform;
+    transition-duration: 0.3s;
+}
+
+.site-top-banner.is-active {
+    display: block;
+    margin-bottom: 0;
+    transform: none;
 }
 
 .site-top-banner__inner {
@@ -28,7 +42,7 @@
     text-decoration: underline;
 }
 
-.site-top-banner__close {
+.site-top-banner__closer {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +56,7 @@
     color: var(--gm-color-white);
 }
 
-.site-top-banner__close:before {
+.site-top-banner__closer:before {
     content: '\e903';
     font-size: 0.5625rem;
     line-height: 1;
@@ -65,18 +79,15 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    padding: 1.25rem 0;
     background-color: var(--gm-color-black-10);
-}
-
-.site-top-banner + .site-header {
-    top: 4.875rem;
 }
 
 .site-header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
 }
 
 .site-header__cta {
@@ -104,7 +115,7 @@
 /**
  * Mobile Menu
  */
-.mobile-menu-toggle {
+.mobile-menu-opener {
     padding: 0;
     font-family: 'icomoon';
     border: none;
@@ -113,7 +124,7 @@
     font-size: 1.75rem;
 }
 
-.mobile-menu-toggle:before {
+.mobile-menu-opener:before {
     content: '\e909';
 } 
 
@@ -171,7 +182,7 @@
     /**
      * Mobile Menu
      */
-    .mobile-menu-toggle {
+    .mobile-menu-opener {
         display: none;
     }
 }
@@ -188,22 +199,19 @@
         font-size: 1.125rem;
     }
 
-    .site-top-banner__close {
+    .site-top-banner__closer {
         width: 2rem;
         height: 2rem;
         
     }
 
-    .site-top-banner__close:before {
+    .site-top-banner__closer:before {
         font-size: 0.75rem;
     }
 
     /**
      * Main
      */
-    .site-top-banner + .site-header {
-        top: 3.875rem;
-    }
      
     /**
     * Logo

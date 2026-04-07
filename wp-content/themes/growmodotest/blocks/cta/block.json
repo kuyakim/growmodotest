@@ -2,7 +2,9 @@
     "name": "acf/cta",
     "title": "CTA",
     "description": "Displays CTA block.",
-    "style": [],
+    "style": [
+        "gm-block-cta"
+    ],
     "category": "gm-blocks",
     "icon": "megaphone",
     "keywords": [

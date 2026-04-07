@@ -2,7 +2,9 @@
     "name": "acf/hero",
     "title": "Hero",
     "description": "Displays Hero block.",
-    "style": [],
+    "style": [
+        "gm-block-hero"
+    ],
     "category": "gm-blocks",
     "icon": "cover-image",
     "keywords": [
