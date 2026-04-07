@@ -1,0 +1,21 @@
+{
+    "name": "acf/properties",
+    "title": "Properties",
+    "description": "Displays properties post type.",
+    "style": [
+        "file:./testimonial.css"
+    ],
+    "category": "gm-blocks",
+    "icon": "admin-comments",
+    "keywords": [
+        "properties",
+        "property"
+    ],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "index.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
