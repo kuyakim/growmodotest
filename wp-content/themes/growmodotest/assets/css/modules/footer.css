@@ -1,7 +1,13 @@
+/**
+ * Main
+ */
 .site-footer {
     
 }
 
+/**
+ * Footer Top
+ */
 .site-footer__top {
     padding: 3.125rem 0;
 }
@@ -10,10 +16,16 @@
     --bs-gutter-y: 3.125rem;
 }
 
+/**
+ * Logo
+ */
 .site-footer__logo {
     width: 7.125rem;
 }
 
+/**
+ * Footer Bottom
+ */
 .site-footer-bottom {
     padding: 1.25rem 0;
     background-color: var(--gm-color-black-10);
@@ -151,6 +163,11 @@
         content: none;
     }
 
+    .site-footer__menu-col-heading {
+        margin-bottom: 1.5rem;
+        font-size: 1.125rem;
+    }
+
     /**
      * Site Footer Bottom
      */
@@ -190,4 +207,20 @@
         max-width: 20rem;
     }
 }
-@media (min-width: 1600px) {}
+
+@media (min-width: 1600px) {
+    /**
+     * Logo
+     */
+    .site-footer__logo {
+        width: 10rem;
+    }
+
+    /**
+     * Site Footer Menu
+     */
+    .site-footer__menu-col-heading {
+        margin-bottom: 1.875rem;
+        font-size: 1.25rem;
+    }
+}

@@ -1,5 +1,17 @@
-GM_APP.Helpers = {
-    debounce() {
-        console.log('debounce')
+{
+    const $ = jQuery;
+
+    $(() => {
+
+    })
+
+    GM_APP.Helpers = {
+        debounce(fn, delay = 100) {
+            let timeoutId;
+            return function (...args) {
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => fn.apply(this, args), delay);
+            };
+        },
     }
 }
